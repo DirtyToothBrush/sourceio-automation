@@ -42,7 +42,7 @@ let maxStats = {
 const firewalls = ["1", "2", "3"];
 const ocrApiKey = "XXX";
 const db = "https://raw.githubusercontent.com/snollygolly/sourceio-automation/master/db.json";
-let message = "get rekt nub";
+let message = "papa bless, one love /r/javascript";
 let wordFreq = 1250;
 let mineFreq = 3000;
 let blockFreq = 5000;
@@ -359,7 +359,7 @@ app = {
 			url: url
 		}).done((data) => {
 			const word = String(data["ParsedResults"][0]["ParsedText"]).trim().toLowerCase().split(" ").join("");
-			if (word.length > 3) {
+			if (word.length > 2) {
 				log(`. Got data: [${word}]`);
 				$("#tool-type-word").val(word);
 				if (isAutomated === true) {
